@@ -1,0 +1,34 @@
+# Virtual environment
+venv/
+
+# Data (raw and processed data not committed; keep folder structure via .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# MLflow tracking
+mlruns/
+
+# CatBoost training logs
+catboost_info/
+
+# Models (binary artifacts not committed)
+models/*
+!models/.gitkeep
+*.pkl
+*.cbm
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local tool config
+.claude/
